@@ -1,0 +1,25 @@
+{
+  "name": "urbanairship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DavidGoodwin.js",
+  "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon index.js",
+    "test": "mocha --recursive",
+    "test:watch": "mocha --recursive -w",
+    "test:int": "mocha test/integration",
+    "test:int:watch": "mocha -w test/integration",
+    "test:unit": "mocha test/unit",
+    "test:unit:watch": "mocha -w test/unit",
+    "pretest": "npm run lint",
+    "lint": "eslint **/*.js"
+  },
+  "author": "David Goodwin <goodwid@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.3.1",
+    "mocha": "^3.0.2"
+  }
+}
